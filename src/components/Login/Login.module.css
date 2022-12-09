@@ -1,0 +1,70 @@
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.login {
+  height: 100%;
+  width: 90%;
+  max-width: 40rem;
+  margin: 20rem auto;
+  padding: 2rem;
+}
+
+.button {
+  text-align: center;
+}
+
+.login {
+  margin-bottom: 1rem;
+}
+
+.login input,
+.login label {
+  display: block;
+}
+
+.login label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.login input,
+.login select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.login input:focus {
+  outline: none;
+  border-color: #240370;
+  background-color: #e0d4fd;
+}
+
+button {
+  font: inherit;
+  background-color: #240370;
+  color: white;
+  border: 1px solid #240370;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button {
+  text-align: right;
+  margin-top: 1em;
+}
