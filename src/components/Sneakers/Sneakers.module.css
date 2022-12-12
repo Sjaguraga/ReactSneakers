@@ -1,0 +1,7 @@
+.display {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}

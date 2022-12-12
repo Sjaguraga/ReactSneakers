@@ -1,16 +1,18 @@
 import React from "react";
 
-const sneakers = [
-    {
-        id: 's1',
-        name: "Air Jordan 1",
-        description: 'Air Jordan 1 Description', 
-        image: ,
-        price: 199.99
-    }
-]
+import classes from "./AvailableSneakers.module.css";
 
-
-const AvailableSneakers = (props) => {};
+const AvailableSneakers = (props) => {
+  return (
+    <div className={classes.card}>
+      <img src={props.image} alt={props.title} />
+      <div className={classes.container}>
+        <h4>{props.title}</h4>
+        <p>{props.price}</p>
+        <p>{props.description}</p>
+      </div>
+    </div>
+  );
+};
 
 export default AvailableSneakers;
