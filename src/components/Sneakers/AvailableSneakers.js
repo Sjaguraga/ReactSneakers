@@ -3,15 +3,22 @@ import React from "react";
 import classes from "./AvailableSneakers.module.css";
 
 const AvailableSneakers = (props) => {
+  const price = `$${props.price.toFixed(2)}`;
+
   return (
-    <div className={classes.card}>
-      <img src={props.image} alt={props.title} />
-      <div className={classes.container}>
-        <h4>{props.title}</h4>
-        <p>{props.price}</p>
-        <p>{props.description}</p>
+    <li className={classes.cards}>
+      <div className={classes["image-box"]}>
+        <img src={props.image} alt={props.title} />
       </div>
-    </div>
+      <div className={classes.details}>
+        <p>{props.title}</p>
+        <p>{price}</p>
+        {/* <div className={classes.actions}>
+          <button>Details</button>
+          <button>Add to cart</button>
+        </div> */}
+      </div>
+    </li>
   );
 };
 

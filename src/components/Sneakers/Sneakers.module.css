@@ -1,7 +1,9 @@
 .display {
-  padding: 0;
-  margin: 0;
+  width: 80%;
+  margin: auto;
+  margin-top: 6%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
 }
