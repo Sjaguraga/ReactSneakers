@@ -13,10 +13,9 @@ const AvailableSneakers = (props) => {
       <div className={classes.details}>
         <p>{props.title}</p>
         <p>{price}</p>
-        {/* <div className={classes.actions}>
-          <button>Details</button>
+        <div className={classes.actions}>
           <button>Add to cart</button>
-        </div> */}
+        </div>
       </div>
     </li>
   );

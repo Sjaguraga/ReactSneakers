@@ -11,8 +11,8 @@ const Navigation = (props) => {
           <a href="/">Sneakers</a>
         </li>
         <li>
-          <a href="/">
-            <HeaderCartButton />
+          <a>
+            <HeaderCartButton onClick={props.onShowCart} />
           </a>
         </li>
         <li>

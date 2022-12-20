@@ -1,6 +1,9 @@
+import { useState } from "react";
+
 // import Signup from "./components/Signup/Signup.js";
 // import Login from "./components/Login/Login.js";
 import Sneakers from "./components/Sneakers/Sneakers";
+import Cart from "./components/Cart/Cart.js";
 
 import classes from "./App.module.css";
 
@@ -118,9 +121,20 @@ const sneakers = [
 ];
 
 const App = () => {
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
   return (
     <div className={classes.app}>
-      <MainHeader />
+      {cartIsShown && <Cart onHideCart={hideCartHandler} />}
+      <MainHeader onShowCart={showCartHandler} />
       <Sneakers items={sneakers} />
       {/* <Signup /> */}
       {/* <Login /> */}
